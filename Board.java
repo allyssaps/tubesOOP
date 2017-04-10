@@ -545,8 +545,9 @@ public class Board extends JPanel
   Image dog31 = Toolkit.getDefaultToolkit().getImage("D:\\Programming Exercise\\LATIHAN JAVA\\TUBES\\Pic/dog31.jpg"); 
   Image dog41 = Toolkit.getDefaultToolkit().getImage("D:\\Programming Exercise\\LATIHAN JAVA\\TUBES\\Pic/dog41.jpg");
   Image titleScreenImage = Toolkit.getDefaultToolkit().getImage("D:\\Programming Exercise\\LATIHAN JAVA\\TUBES\\Pic/titleScreen.jpg"); 
-  Image gameOverImage = Toolkit.getDefaultToolkit().getImage("D:\\Programming Exercise\\LATIHAN JAVA\\TUBES\\Pic/gameOver.jpg"); 
+  Image gameOverImage = Toolkit.getDefaultToolkit().getImage("D:\\Programming Exercise\\LATIHAN JAVA\\TUBES\\Pic/game over.jpg"); 
   Image winScreenImage = Toolkit.getDefaultToolkit().getImage("D:\\Programming Exercise\\LATIHAN JAVA\\TUBES\\Pic/winScreen.jpg");
+  Image cherryImage = Toolkit.getDefaultToolkit().getImage("D:\\Programming Exercise\\LATIHAN JAVA\\TUBES\\Pic/cherry1600.png");
 
   /* Initialize the player and dogs */
   Player player = new Player(200,300);
@@ -847,6 +848,19 @@ public class Board extends JPanel
 
 
   /* Draws the pellets on the screen */
+  /* public void drawPellets(Graphics g)
+  {
+        g.setColor(Color.RED);
+        for (int i=1;i<20;i++)
+        {
+          for (int j=1;j<20;j++)
+          {
+            if ( pellets[i-1][j-1])
+            g.fillOval(i*20+8,j*20+8,4,4);
+          }
+        }
+  } */
+  
   public void drawPellets(Graphics g)
   {
         g.setColor(Color.RED);
